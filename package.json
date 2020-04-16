@@ -13,6 +13,7 @@
   "author": "Yishai Zehavi",
   "license": "MIT",
   "dependencies": {
+    "@now/node": "^1.5.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "json-server": "^0.12.1"

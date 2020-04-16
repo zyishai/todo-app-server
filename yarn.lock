@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@now/node@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@now/node/-/node-1.5.1.tgz#e0d559ea5d1efaa5cc8a7c35208aa6ad01634ab2"
+  integrity sha512-2nXhdqo4aNShHuTwbdQmZQX4jYXAoI85+FTPStD5DZVC3kbSS8m5RDxJu7Op7ffBPwIu8Nmp6ukjXct3Abad7g==
+  dependencies:
+    "@types/node" "*"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -18,6 +25,11 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+
+"@types/node@*":
+  version "13.11.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.11.1.tgz#49a2a83df9d26daacead30d0ccc8762b128d53c7"
+  integrity sha512-eWQGP3qtxwL8FGneRrC5DwrJLGN4/dH1clNTuLfN81HCrxVtxRjygDTUoZJ5ASlDEeo0ppYFQjQIlXhtXpOn6g==
 
 abbrev@1:
   version "1.1.1"
