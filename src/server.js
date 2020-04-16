@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 router.use(bodyParser.json());
 router.get('/:message', (_, res) => {
-    res.json({
+    res.status(200).json({
         status: 'OK',
         message: 'Hello world!'
     });
