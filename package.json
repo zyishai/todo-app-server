@@ -4,7 +4,8 @@
   "description": "Simple json-base database to deploy to Now",
   "main": "functions/server.js",
   "scripts": {
-    "start": "node api/v1.js"
+    "start": "node api/v1.js",
+    "build": "echo Hello World!"
   },
   "keywords": [
     "json-server, node, REST API"
