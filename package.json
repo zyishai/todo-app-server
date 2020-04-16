@@ -1,12 +1,10 @@
 {
   "name": "tasks-json-server",
   "version": "1.0.0",
-  "description": "Simple json-base database to deploy to Netlify",
+  "description": "Simple json-base database to deploy to Now",
   "main": "functions/server.js",
   "scripts": {
-    "postinstall": "netlify-lambda install src",
-    "build": "netlify-lambda build src",
-    "start": "netlify-lambda serve src"
+    "start": "node api/v1.js"
   },
   "keywords": [
     "json-server, node, REST API"
@@ -14,10 +12,7 @@
   "author": "Yishai Zehavi",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "json-server": "^0.12.1",
-    "netlify-lambda": "^1.6.3",
-    "serverless-http": "^2.3.2"
+    "json-server": "^0.12.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
