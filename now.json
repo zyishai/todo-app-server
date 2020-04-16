@@ -3,14 +3,14 @@
     "name": "api",
     "builds": [
         {
-            "src": "/src/server.js",
+            "src": "/src/lambdas/basic.js",
             "use": "@now/node"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/src/server.js"
+            "dest": "/src/lambdas/basic.js"
         }
     ]
 }
