@@ -1,10 +1,12 @@
-// const jsonServer = require('json-server');
-// const path = require('path');
+const jsonServer = require('json-server');
+const path = require('path');
 const router = require('express').Router();
-const bodyParser = require('body-parser');
-// const router = jsonServer.router(path.resolve(__dirname, '..', 'db.json'));
+// const bodyParser = require('body-parser');
+const jsonRouter = jsonServer.router(path.resolve(__dirname, '..', 'db.json'));
+const middlewares = jsonServer.defaults();
 
-router.use(bodyParser.json());
+router.use(middlewares);
+router.use(jsonRouter);
 router.get('*', (_, res) => {
     res.status(200).json({
         status: 'OK',
