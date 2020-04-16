@@ -3,11 +3,19 @@
     "name": "api",
     "builds": [
         {
+            "src": "/src/data/*.json",
+            "use": "@now/static"
+        },
+        {
             "src": "/src/lambdas/basic.js",
             "use": "@now/node"
         }
     ],
     "routes": [
+        {
+            "src": "/data",
+            "dest": "/src/data/db.json"
+        },
         {
             "src": "/api/.*",
             "dest": "/src/lambdas/basic.js"

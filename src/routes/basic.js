@@ -2,7 +2,7 @@ const jsonServer = require('json-server');
 const path = require('path');
 const router = require('express').Router();
 // const bodyParser = require('body-parser');
-const jsonRouter = jsonServer.router(path.resolve(__dirname, '..', 'db.json'));
+const jsonRouter = jsonServer.router('/data');
 const middlewares = jsonServer.defaults();
 
 router.use(middlewares);
