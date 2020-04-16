@@ -4,6 +4,7 @@
   "description": "Simple json-base database to deploy to Netlify",
   "main": "functions/server.js",
   "scripts": {
+    "postinstall": "netlify-lambda install src",
     "build": "netlify-lambda build src",
     "start": "netlify-lambda serve src"
   },
