@@ -1,18 +1,19 @@
 {
   "name": "tasks-json-server",
   "version": "1.0.0",
-  "description": "Simple json-base database to deploy to Heroku",
+  "description": "Simple json-base database to deploy to Netlify",
   "main": "functions/server.js",
   "scripts": {
-    "build": "netlify-lambda build functions",
-    "start": "nodemon server.js"
+    "build": "netlify-lambda build src",
+    "start": "netlify-lambda serve src"
   },
   "keywords": [
-    "json-server,heroku, node, REST API"
+    "json-server, node, REST API"
   ],
-  "author": "Jesper Orb",
-  "license": "ISC",
+  "author": "Yishai Zehavi",
+  "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "json-server": "^0.12.1",
     "netlify-lambda": "^1.6.3",
     "serverless-http": "^2.3.2"
