@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 // const router = jsonServer.router(path.resolve(__dirname, '..', 'db.json'));
 
 router.use(bodyParser.json());
-router.get('/:message', (_, res) => {
+router.get('*', (_, res) => {
     res.status(200).json({
         status: 'OK',
         message: 'Hello world!'
